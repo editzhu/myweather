@@ -186,4 +186,10 @@ public class WeatherActivity extends Activity implements OnClickListener {
 		startService(intent);
 	}
 
+	public void onBackPressed() {
+		Intent intent = new Intent(this, ChooseAreaActivity.class);
+		startActivity(intent);
+		finish();
+	}
+
 }
